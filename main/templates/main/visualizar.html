@@ -1,0 +1,22 @@
+{%extends 'main/layout.html'%}
+<style>
+
+</style>
+{%block layout%}
+    <ul class = "Articulos">
+        {%for articulo in articulos%}
+            <li class = "Articulo">
+                <h3>{{articulo.titulo}}</h3>
+                <p>{{articulo.contenido}}</p>
+                {%if articulo.publico%}
+                    <h4 style = "color : green">PUBLICO</h4>
+                {%else%}
+                    <h4 style = "color : red">PRIVADO</h4>
+                {%endif%}
+                {%if artiulo.imagen%}
+                    <h4>IMAGEN INCLUÍDA</h4>
+                {%endif%}
+            </li>
+        {%endfor%}
+    </ul>
+{%endblock%}

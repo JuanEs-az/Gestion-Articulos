@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href = "{% static 'css/mainStyleSheet.css'%}" type = "text/css" rel = "stylesheet"/>
+        <style>
+
+        </style>
+        <title>
+            {%block title%}
+                {{text}}
+            {%endblock%}
+        </title>
+    </head>
+    <body>
+        <h1 id = "header">
+            {{text}}
+        </h1>
+
+        <div id = "Pages">
+
+            <ul >
+                <li><a href = "{%url "Principal"%}">Inicio</a></li>
+                <li><a href = "{%url "Crear Articulo"%}">Añadir Articulo</a></li>
+                <li><a href = "{%url "Ver Articulos"%}">Visualización</a></li>
+            <ul>
+
+        </div>
+
+        <div class = "contenido">
+            {% block layout %}
+
+            {% endblock %}
+        </div>
+    </body>
+</html>

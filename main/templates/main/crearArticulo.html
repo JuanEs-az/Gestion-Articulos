@@ -1,0 +1,10 @@
+{%extends 'main/layout.html'%}
+
+{%block layout%}
+    <h2>Añade tu propio Articulo hoy mismo!</h2>
+    <form action = "" method = "POST">
+        {% csrf_token %}
+        {{formulario}}
+        <input type="submit" class = "subBut"/>
+    </form>
+{%endblock%}

@@ -1,0 +1,87 @@
+*{
+    font-family: 'Press Start 2P', cursive;
+    list-style: none;
+    text-decoration: none;
+    text-emphasis: none;
+}
+body{
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image:url("https://64.media.tumblr.com/486322ba78b854b64f56501bc675f164/tumblr_prerqrnkSE1uy5z3wo1_1280.gifv");
+}
+#header{
+    display:block;
+    color : rgba(255, 99, 71, 0.541);
+    padding:0;
+    margin:auto;
+    text-align: center;
+    font-size: 50px;
+    line-height: 93px;
+}
+.contenido{
+    display: block;
+    margin: auto;
+    background-color:rgba(255, 99, 71, 0.541);
+    width: 766px;
+    height: auto;
+}
+.contenido>*{
+    margin:10px;
+    text-align: center;
+    padding-top:15px;
+}
+.contenido form input,.contenido form textarea{
+    float: none;
+    margin-right: 500px;
+    margin-bottom: 10px;
+    font-size:12px;
+}
+.contenido form label{
+    float: left;
+    margin-top: 10px;
+}
+.contenido form input[type = "checkbox"]{
+    float: left;
+    margin-top:2px;
+    height: 30px;
+    width:30px;
+}
+#Pages{
+    width: 886px;
+    height:50px;
+    padding:0;
+    margin-bottom: 10px;
+    margin-left:242px;
+}
+#Pages ul li{
+    
+    font-size: 14px;
+    text-align:center;
+    float: left;
+    line-height : 50px;
+    background-color:rgba(255, 99, 71, 0.541);
+    border:black 1px groove;
+    width: 254px
+}
+#Pages ul li a{
+    color: black;
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+#Pages ul li:hover{
+    background-color :rgba(252, 108, 82, 0.493);
+    transition: background-color .2s ease-in;
+    cursor:pointer;
+}
+.Articulo{
+    padding: 20px;
+    background-color : rgba(30, 143, 255, 0.425);
+    text-align:left;
+    margin: 0px;
+    width: 637px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
